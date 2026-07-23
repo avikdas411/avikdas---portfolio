@@ -361,3 +361,71 @@ footer {
     object-fit: cover;
     display: block;
 }
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: #111827;
+    border: 1px solid rgba(0, 198, 255, 0.2);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    border-color: #00c6ff;
+    box-shadow: 0 15px 35px rgba(0, 198, 255, 0.15);
+}
+
+.education-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.education-card h3 {
+    color: #00c6ff;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.education-place {
+    color: #ffffff !important;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px !important;
+}
+
+.education-card p:not(.education-place) {
+    color: #b7c0ce;
+    font-size: 14px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card img {
+        height: 200px;
+    }
+
+}
