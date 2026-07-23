@@ -701,3 +701,75 @@ section {
     background: #00c6ff;
     color: #061018;
 }
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+/* Hamburger Button */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #00c6ff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+/* Mobile Menu */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        flex-direction: row;
+        padding: 15px 20px;
+    }
+
+    /* Show Hamburger */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mobile Navigation */
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(6, 16, 24, 0.98);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 15px 0;
+        border-top: 1px solid rgba(0, 198, 255, 0.2);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Open Menu */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .nav-links a:hover {
+        background: rgba(0, 198, 255, 0.08);
+    }
+
+}
