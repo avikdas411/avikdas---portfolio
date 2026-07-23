@@ -1,0 +1,280 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f19;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   HOME SECTION
+========================= */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #38bdf8;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    max-width: 650px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-box {
+    max-width: 800px;
+    margin: auto;
+    background-color: #111827;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+}
+
+.education-box h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.education-box p {
+    color: #cbd5e1;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #111827;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    width: 300px;
+    padding: 25px;
+    background-color: #111827;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content p {
+    color: #cbd5e1;
+    margin: 10px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: #94a3b8;
+    border-top: 1px solid #1f2937;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+}
