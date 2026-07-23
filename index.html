@@ -59,9 +59,9 @@
                     Hello, I'm <span>Avik Das</span>
                 </h1>
 
-                <h2>
-                    BCA Student & Aspiring IT Professional
-                </h2>
+                <h2 class="typing-text">
+    <span id="typing"></span><span class="cursor">|</span>
+</h2>
 
                 <p class="intro">
                     I am a passionate BCA student interested in technology,
@@ -456,6 +456,61 @@
         });
 
     });
+
+</script>
+    <script>
+
+const typingElement = document.getElementById("typing");
+
+const words = [
+    "BCA Student",
+    "Aspiring IT Professional",
+    "Web Developer",
+    "Programmer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+        typingElement.textContent =
+            currentWord.substring(0, charIndex - 1);
+
+        charIndex--;
+    } else {
+        typingElement.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+    }
+
+    let speed = isDeleting ? 60 : 120;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        speed = 1500;
+        isDeleting = true;
+    }
+
+    else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex++;
+
+        if (wordIndex === words.length) {
+            wordIndex = 0;
+        }
+
+        speed = 500;
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
 
 </script>
 
