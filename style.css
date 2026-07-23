@@ -507,3 +507,74 @@ footer {
     }
 
 }
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #111827;
+    border: 1px solid rgba(0, 198, 255, 0.2);
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #00c6ff;
+    box-shadow: 0 15px 35px rgba(0, 198, 255, 0.15);
+}
+
+.contact-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #00c6ff;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #b7c0ce;
+    font-size: 14px;
+    margin-bottom: 20px !important;
+}
+
+.contact-card a {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #00c6ff;
+    border-radius: 25px;
+    color: #00c6ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact-card a:hover {
+    background: #00c6ff;
+    color: #061018;
+}
+
+
+/* Contact Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
