@@ -345,3 +345,19 @@ footer {
         font-size: 30px;
     }
 }
+/* Profile Photo Fix */
+.profile-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid #00c6ff;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
