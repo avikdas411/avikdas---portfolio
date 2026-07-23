@@ -796,3 +796,72 @@ section {
     }
 
 }
+/* =========================
+   PROFILE PHOTO GLOW EFFECT
+========================= */
+
+.profile-circle {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(135deg, #00c6ff, #7b2cff);
+    box-shadow:
+        0 0 20px rgba(0, 198, 255, 0.4),
+        0 0 50px rgba(0, 198, 255, 0.2);
+}
+
+/* Photo */
+
+.profile-circle img,
+.profile-circle .photo-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Glow Animation */
+
+.profile-circle::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: linear-gradient(
+        45deg,
+        #00c6ff,
+        transparent,
+        #7b2cff,
+        transparent
+    );
+    z-index: -1;
+    animation: rotateGlow 4s linear infinite;
+}
+
+@keyframes rotateGlow {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================
+   MOBILE PHOTO
+========================= */
+
+@media (max-width: 768px) {
+
+    .profile-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+}
