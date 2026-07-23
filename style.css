@@ -865,3 +865,48 @@ section {
     }
 
 }
+/* =========================
+   STEP 12 - BACKGROUND GLOW
+========================= */
+
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top Right Glow */
+
+.home::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 80px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(0, 198, 255, 0.10);
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+/* Bottom Left Glow */
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    bottom: 20px;
+    left: -100px;
+    border-radius: 50%;
+    background: rgba(123, 44, 255, 0.10);
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+/* Keep Home Content Above Background Glow */
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
