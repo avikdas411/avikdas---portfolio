@@ -6,262 +6,165 @@
 
     <title>Avik Das | Portfolio</title>
 
-    <!-- Connect CSS -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
 
-    <nav>
-        <div class="logo">Avik Das</div>
+            <div class="logo">
+                Avik Das
+            </div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
 
 
-    <!-- =========================
-         HOME
-    ========================== -->
-
-    <section id="home">
+    <!-- Home Section -->
+    <section id="home" class="home">
 
         <div class="home-content">
 
-            <h1>Hello, I'm <span>Avik Das</span></h1>
+            <div class="home-text">
 
-            <h2>BCA Student & Aspiring IT Professional</h2>
+                <p class="welcome-text">
+                    WELCOME TO MY PORTFOLIO
+                </p>
 
-            <p>
-                Welcome to my personal portfolio website.
-                I am a BCA student interested in technology,
-                programming and software development.
-            </p>
+                <h1>
+                    Hello, I'm <span>Avik Das</span>
+                </h1>
 
-            <a href="#about" class="btn">
-                Explore My Portfolio
-            </a>
+                <h2>
+                    BCA Student & Aspiring IT Professional
+                </h2>
+
+                <p class="intro">
+                    I am a passionate BCA student interested in technology,
+                    programming and software development. I enjoy learning
+                    new technologies and building creative projects.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#projects" class="btn">
+                        Explore My Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Photo Area -->
+            <div class="home-image">
+
+                <div class="profile-circle">
+
+                    <!-- পরে এখানে আপনার ছবির নাম বসাব -->
+                    <div class="photo-placeholder">
+                        YOUR PHOTO
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
+    <!-- About Section -->
     <section id="about">
+        <h2>About Me</h2>
 
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="about-content">
-
-            <p>
-                Hello! My name is Avik Das.
-                I am currently pursuing my Bachelor of Computer
-                Applications (BCA).
-
-                I am interested in programming, web development
-                and learning new technologies.
-
-                I enjoy creating projects and improving my
-                technical skills step by step.
-            </p>
-
-        </div>
-
+        <p>
+            Hello! I am Avik Das, a BCA student who is interested in
+            technology, programming and software development.
+        </p>
     </section>
 
 
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
+    <!-- Education Section -->
     <section id="education">
+        <h2>Education</h2>
 
-        <h2 class="section-title">
-            Education
-        </h2>
-
-        <div class="education-box">
-
-            <h3>
-                Bachelor of Computer Applications (BCA)
-            </h3>
-
-            <p>
-                Currently pursuing BCA
-            </p>
-
-            <p>
-                Global College of Science and Technology
-            </p>
-
-            <p>
-                West Bengal, India
-            </p>
-
-        </div>
-
+        <p>
+            Bachelor of Computer Applications (BCA)
+        </p>
     </section>
 
 
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
+    <!-- Skills Section -->
     <section id="skills">
-
-        <h2 class="section-title">
-            My Skills
-        </h2>
+        <h2>My Skills</h2>
 
         <div class="skills-container">
 
-            <div class="skill">
-                HTML
-            </div>
-
-            <div class="skill">
-                CSS
-            </div>
-
-            <div class="skill">
-                Java
-            </div>
-
-            <div class="skill">
-                Python
-            </div>
-
-            <div class="skill">
-                SQL
-            </div>
-
-            <div class="skill">
-                Git & GitHub
-            </div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">SQL</div>
 
         </div>
-
     </section>
 
 
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
+    <!-- Projects Section -->
     <section id="projects">
+        <h2>My Projects</h2>
 
-        <h2 class="section-title">
-            My Projects
-        </h2>
+        <div class="project-card">
 
-        <div class="projects-container">
+            <h3>Restaurant Chatbot</h3>
 
-
-            <!-- Project 1 -->
-
-            <div class="project-card">
-
-                <h3>
-                    Restaurant Chatbot
-                </h3>
-
-                <p>
-                    A chatbot project designed to provide
-                    information about restaurant services
-                    and help users with common queries.
-                </p>
-
-            </div>
-
-
-            <!-- Project 2 -->
-
-            <div class="project-card">
-
-                <h3>
-                    Churn Prediction
-                </h3>
-
-                <p>
-                    A machine learning project that predicts
-                    customer churn using customer data.
-                </p>
-
-            </div>
-
-
-            <!-- Project 3 -->
-
-            <div class="project-card">
-
-                <h3>
-                    Personal Portfolio
-                </h3>
-
-                <p>
-                    A personal portfolio website created
-                    using HTML and CSS and hosted using
-                    GitHub Pages.
-                </p>
-
-            </div>
-
+            <p>
+                A chatbot project designed to help users interact
+                with a restaurant service.
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
+    <!-- Contact Section -->
     <section id="contact">
 
-        <h2 class="section-title">
-            Contact Me
-        </h2>
+        <h2>Contact Me</h2>
 
-        <div class="contact-content">
-
-            <p>
-                If you would like to contact me,
-                feel free to reach out.
-            </p>
-
-            <p>
-                Email: YourEmail@example.com
-            </p>
-
-            <p>
-                GitHub: github.com/avikdas411
-            </p>
-
-        </div>
+        <p>
+            Email: Your Email Here
+        </p>
 
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- Footer -->
     <footer>
 
         <p>
@@ -269,7 +172,6 @@
         </p>
 
     </footer>
-
 
 </body>
 </html>
